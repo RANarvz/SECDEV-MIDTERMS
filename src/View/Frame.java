@@ -8,6 +8,7 @@ import java.awt.Dimension;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import javax.swing.WindowConstants;
+import java.util.regex.Pattern;
 
 public class Frame extends javax.swing.JFrame {
 
@@ -260,7 +261,7 @@ public class Frame extends javax.swing.JFrame {
     }
     
     public int registerAction(String username, String password, String confpass){
-        if(password.trim().length() < 8 ) {
+        if(!Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=_])(?=\\S+$).{8,}$", password)) {
             System.out.println("hello");
             return -2;
         }
