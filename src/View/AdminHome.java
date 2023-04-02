@@ -13,6 +13,7 @@ import Model.User;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -165,21 +166,11 @@ public class AdminHome extends javax.swing.JPanel {
     }//GEN-LAST:event_usersBtnActionPerformed
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
-        mgmtProduct.init();
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.red);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtProduct");
+        JOptionPane.showMessageDialog(null, "YOU DO NOT HAVE PERMISSION TO ACCESS THIS FUNCTIONALITY.");
     }//GEN-LAST:event_productsBtnActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
-        mgmtHistory.init();
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.red);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtHistory");
+        JOptionPane.showMessageDialog(null, "YOU DO NOT HAVE PERMISSION TO ACCESS THIS FUNCTIONALITY.");
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed

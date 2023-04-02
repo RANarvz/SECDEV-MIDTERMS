@@ -13,6 +13,7 @@ import Model.User;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -156,12 +157,7 @@ public class StaffHome extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
-        mgmtUser.init();
-        usersBtn.setForeground(Color.red);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtUser");
+        JOptionPane.showMessageDialog(null, "YOU DO NOT HAVE PERMISSION TO ACCESS THIS FUNCTIONALITY.");
     }//GEN-LAST:event_usersBtnActionPerformed
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
@@ -174,21 +170,11 @@ public class StaffHome extends javax.swing.JPanel {
     }//GEN-LAST:event_productsBtnActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
-        mgmtHistory.init();
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.red);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtHistory");
+        JOptionPane.showMessageDialog(null, "YOU DO NOT HAVE PERMISSION TO ACCESS THIS FUNCTIONALITY.");
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed
-        mgmtLogs.init();
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.red);
-        contentView.show(Content, "mgmtLogs");
+        JOptionPane.showMessageDialog(null, "YOU DO NOT HAVE PERMISSION TO ACCESS THIS FUNCTIONALITY.");
     }//GEN-LAST:event_logsBtnActionPerformed
     
     
