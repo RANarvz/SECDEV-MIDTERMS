@@ -183,10 +183,13 @@ public class MgmtProduct extends javax.swing.JPanel {
             };
 
             int result = JOptionPane.showConfirmDialog(null, message, "PURCHASE PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
-
+            
+            
             if (result == JOptionPane.OK_OPTION) {
                 System.out.println(stockFld.getText());
+                System.out.println((int)tableModel.getValueAt(table.getSelectedRow(), 1)-(Integer.parseInt(stockFld.getText())));
             }
+            tableModel.setValueAt((int)tableModel.getValueAt(table.getSelectedRow(), 1)-(Integer.parseInt(stockFld.getText())), table.getSelectedRow(), 1);
         }
     }//GEN-LAST:event_purchaseBtnActionPerformed
 
